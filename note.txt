@@ -16,3 +16,10 @@ $ source ~/.bashrc
 
 cd .. out from directory
 re-enter then the environment with be setup!
+
+Heroku Settings
+For staging run the following command:
+$ heroku config:set APP_SETTINGS=config.StagingConfig --remote stage
+
+For production:
+$ heroku config:set APP_SETTINGS=config.ProductionConfig --remote pro
