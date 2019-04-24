@@ -1,0 +1,18 @@
+#Reminder for myself
+
+How to set up local environment
+Shell
+$ deactivate
+$ pip install autoenv==1.0.0
+$ touch .env
+
+Text
+source env/bin/activate
+export APP_SETTINGS="config.DevelopmentConfig"
+
+Shell
+$ echo "source `which activate.sh`" >> ~/.bashrc
+$ source ~/.bashrc
+
+cd .. out from directory
+re-enter then the environment with be setup!
