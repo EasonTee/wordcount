@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-import os
-=======
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 import os
@@ -13,7 +8,6 @@ import nltk
 from app.stop_words import stops
 from collections import Counter
 from bs4 import BeautifulSoup
->>>>>>> tester
 
 app = Flask(__name__)
 app.config.from_object(os.environ['APP_SETTINGS'])
@@ -23,16 +17,6 @@ db = SQLAlchemy(app)
 from app.models import Result
 
 
-<<<<<<< HEAD
-@app.route('/')
-def hello():
-    return "Hello World!"
-
-
-@app.route('/<name>')
-def hello_name(name):
-    return "Hello {}!".format(name)
-=======
 @app.route('/', methods=['GET','POST'])
 def index():
     errors = []
@@ -84,4 +68,3 @@ def index():
 
 
 
->>>>>>> tester
