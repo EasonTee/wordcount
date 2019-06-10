@@ -11,5 +11,5 @@ I follow the tutorial, anyway i changed some of the codes as this tutorial was c
 4) Part Four: Implement a Redis task queue to handle the text processing. (not compatible with window os)
 Possible solution: switch to linux os and continue to build from there
 
-website link: https://dashboard.heroku.com/apps/wordcount900-stage
+website link: https://wordcount900-stage.herokuapp.com/
 
